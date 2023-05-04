@@ -26,5 +26,26 @@ public class Client {
         }
 
     }
+
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String toString(){
+
+        String msg = "===================================\n";
+        msg += "* Nombre: " + this.name + "\n";
+        msg+= "* Total de productos: " + basket.size() + "\n";
+        msg+= "* Lista de artículos en la cesta:\n";
+
+        for (int i = 0; i < basket.size(); i++) {
+            msg+= " " + basket.get(i) + "\n";
+        }
+
+        msg += "===================================\n";
+
+        return msg;
+    }
     
 }

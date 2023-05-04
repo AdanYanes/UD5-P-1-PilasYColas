@@ -10,8 +10,6 @@ public class Cashier {
 
     Random random = new Random();
 
-    private String name;
-
     private Queue<Client> clientQueue = new LinkedList<>();
 
     private boolean isStationOpen = false;
@@ -19,8 +17,24 @@ public class Cashier {
     private int stationNumber = random.nextInt(12);
 
     public Cashier(){
-        this.name = RandomName.getRandomName();
 
+    }
+
+    @Override
+    public String toString(){
+
+        String msg = "===================================\n";
+        msg += "* Número de caja: " + this.stationNumber + "\n";
+        msg+= "* Total de clientes: " + clientQueue.size() + "\n";
+        msg+= "* Clientes en la fila:\n";
+
+        for (Client client : clientQueue) {
+            msg += "    " + client.getName() + "\n";
+        }
+
+        msg += "===================================\n";
+
+        return msg;
     }
     
 }
