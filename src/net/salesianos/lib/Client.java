@@ -10,7 +10,7 @@ public class Client {
 
     private String name;
 
-    Stack<String> basket = new Stack<>();
+    private Stack<String> basket = new Stack<>();
 
     public Client(){
         this.name = RandomName.getRandomName();
