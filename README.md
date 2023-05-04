@@ -38,3 +38,13 @@ To view the pending clients, select option 4 from the main menu. If there are cl
 To close the supermarket, select option 5 from the main menu. This will set the isStationOpen variable to false in the Cashier class and exit the program. <br>
 
 ## Documentation
+
+For being able to check the Cashier.java documentation click [here](./src/net/salesianos/docs/Cashier.md)
+
+For being able to check the Client.java documentation click [here](./src/net/salesianos/docs/Client.md)
+
+For being able to check the Main.java documentation click [here](./src/net/salesianos/docs/Main.md)
+
+For being able to check the RandomName.java documentation click [here](./src/net/salesianos/docs/RandomName.md)
+
+For being able to check the RandomProduct.java documentation click [here](./src/net/salesianos/docs/RandomProduct.md)
