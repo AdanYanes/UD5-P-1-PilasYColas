@@ -20,6 +20,40 @@ public class Cashier {
 
     }
 
+    public void openStation(){
+        if (isStationOpen){
+            System.out.println("La caja ya esta abierta");
+        }else{
+            System.out.println("Se ha abierto la caja");
+            this.isStationOpen = true;
+        }
+    }
+
+    public void closeStation(){
+        if (!isStationOpen){
+            System.out.println("La caja ya esta cerrada");
+        }else{
+            System.out.println("Se ha cerrado la caja");
+            this.isStationOpen = false;
+        }
+    }
+
+    public void addClient(){
+        clientQueue.add(new Client());
+    }
+
+    public boolean getIsStationOpen() {
+        return isStationOpen;
+    }
+
+    public Queue<Client> getClientQueue() {
+        return clientQueue;
+    }
+
+    public int getStationNumber() {
+        return stationNumber;
+    }
+
     @Override
     public String toString(){
 
